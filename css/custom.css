@@ -1,0 +1,39 @@
+.custom-image {
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.custom-background-body {
+	background-size: 2000px;
+	background-image: url('/images/pattern1.jpg');
+    background-repeat: repeat;
+}
+
+.custom-background-scroll {
+	background-size: 150px;
+	background-image: url('/images/pattern1.jpg');
+    background-repeat: repeat;
+}
+
+.horizontal-scroll {
+	overflow: auto;
+	white-space: nowrap;
+	border-color: gray;
+	border-style: solid;
+	padding: 25px;
+	border-width: 1px;
+	border-radius: 5px;
+}
+
+.margin-right-maze {
+	margin-right: 15px;
+}
+
+.margin-right-bill {
+	margin-right: 50px;
+}
+
+.margin-right-turnkey {
+	margin-right: 60px;
+}
