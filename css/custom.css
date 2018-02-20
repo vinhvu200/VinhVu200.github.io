@@ -31,9 +31,23 @@
 }
 
 .margin-right-bill {
-	margin-right: 50px;
+	margin-right: 60px;
 }
 
 .margin-right-turnkey {
 	margin-right: 60px;
+}
+
+.project-desc-font {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.project-title-font {
+	font-family: 'Patua One', cursive;
+}
+
+.tab-border-active {
+	border-color: #159db5;
+	border-style: dashed;
+	border-width: 0.15em;
 }

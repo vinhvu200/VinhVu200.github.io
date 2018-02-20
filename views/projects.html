@@ -5,19 +5,22 @@
 <div class="row">
 	<div class="col-2">
 		<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-			<a class="nav-link" href="" ng-click="projects.setTab(0)">Maze AI</a>
-			<a class="nav-link" href="" ng-click="projects.setTab(1)">Bill Split</a>
-			<a class="nav-link" href="" ng-click="projects.setTab(2)">Turnkey</a>
+			<a class="nav-link text-info text-center" href="" ng-click="projects.setTab(0)"
+			ng-class="{ 'tab-border-active' : projects.currentTab === 0}">Maze AI</a>
+			<a class="nav-link text-info text-center" href="" ng-click="projects.setTab(1)"
+			ng-class="{ 'tab-border-active' : projects.currentTab === 1}">Bill Split</a>
+			<a class="nav-link text-info text-center" href="" ng-click="projects.setTab(2)"
+			ng-class="{ 'tab-border-active' : projects.currentTab === 2}">Turnkey</a>
 		</div>
 	</div>
 	<div class="col-10">
 
 		<div ng-switch="projects.currentTab">
 			<div ng-switch-when="0">
-				<h4>MAZE AI</h4>
-				<p>I have been learning about Reinforcement Learning lately so I decided to put some of that knowlege to practice. Here, I created a tool to visually represent what is happening during the learning process of Q(λ). Users can observe how certain parameter affects the learning by watching the bot learn the maze or manually move the bot itself to see the results. Check out my Github for a more detailed explanation and videos of the bot learning the maze.</p>
+				<h4 class="project-title-font">MAZE AI</h4>
+				<p class="project-desc-font">I have been learning about Reinforcement Learning lately so I decided to put some of that knowlege to practice. Here, I created a tool to visually represent what is happening during the learning process of Q(λ). Users can observe how certain parameter affects the learning by watching the bot learn the maze or manually move the bot itself to see the results. Check out my Github for a more detailed explanation and videos of the bot learning the maze.</p>
 				<img src="images/github_icon.svg" width="25"/>
-				<a href="https://github.com/vinhvu200/MazeAI">Details here</a>
+				<a class="text-info" href="https://github.com/vinhvu200/MazeAI">Details here</a>
 				<br />
 				<br />
 				<div class="horizontal-scroll custom-background-scroll">
@@ -27,10 +30,10 @@
 				</div>
 			</div>
 			<div ng-switch-when="1">
-				<h4>Bill Split</h4>
-				<p>I designed an iOS mobile application to identify and split items on a receipt by product/price. Using tesseractOCR, your phone would be able to recognize texts on a receipt and parse it out line by line. After adding, deleting, and editing the appropriate lines, the user can assign individuals to their various purchase (along with tip and tax) so the application can partition the bill fairly. In retrospect, there is still lots of manual inputs to do but at least it is neat. Check out my Github for more details!</p>
+				<h4 class="project-title-font">Bill Split</h4>
+				<p class="project-desc-font">I designed an iOS mobile application to identify and split items on a receipt by product/price. Using tesseractOCR, your phone would be able to recognize texts on a receipt and parse it out line by line. After adding, deleting, and editing the appropriate lines, the user can assign individuals to their various purchase (along with tip and tax) so the application can partition the bill fairly. In retrospect, there is still lots of manual inputs to do but at least it is neat. Check out my Github for more details!</p>
 				<img src="images/github_icon.svg" width="25"/>
-				<a href="https://github.com/vinhvu200/BillSplit">Details here</a>
+				<a class="text-info" href="https://github.com/vinhvu200/BillSplit">Details here</a>
 				<br />
 				<br />
 				<div class="horizontal-scroll custom-background-scroll">
@@ -42,17 +45,18 @@
 				</div>
 			</div>
 			<div ng-switch-when="2">
-				<h4>TurnKey</h4>
-				<p>For my Senior Experience Project, my team was tasked with the creation of prototypical android mobile application for TurnKey Strategic Relations. The team was comprised of both business and computer science students. This application provides tracking mechanisms to monitor the progress of goals set for the company. Competency scores are calculated from these continuous feedback in order to see how employees are doing at any point in time.</p>
+				<h4 class="project-title-font">TurnKey</h4>
+				<p class="project-desc-font">For my Senior Experience Project, my team was tasked with the creation of prototypical android mobile application for TurnKey Strategic Relations. The team was comprised of both business and computer science students. This application provides tracking mechanisms to monitor the progress of goals set for the company. Competency scores are calculated from these continuous feedback in order to see how employees are doing at any point in time.</p>
 				<img src="images/github_icon.svg" width="25"/>
-				<a href="https://github.com/vinhvu200/BillSplit">Details here</a>
+				<a class="text-info" href="https://github.com/vinhvu200/BillSplit">Details here</a>
 				<br />
 				<br />
 				<div class="horizontal-scroll custom-background-scroll">
 					<img src="images/turnkey_1.png" class="margin-right-turnkey" width="255">
-					<img src="images/turnkey_2.png" class="margin-right-turnkey" width="250">
-					<img src="images/turnkey_3.png" class="margin-right-turnkey" width="255">
-					<img src="images/turnkey_4.png" class="" width="255">
+					<img src="images/turnkey_2.png" class="margin-right-turnkey" width="255">
+					<img src="images/turnkey_3.png" class="margin-right-turnkey" width="250">
+					<img src="images/turnkey_4.png" class="margin-right-turnkey" width="255">
+					<img src="images/turnkey_5.png" class="" width="255">
 				</div>
 			</div>
 		</div>
