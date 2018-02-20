@@ -22,7 +22,7 @@
 	border-color: gray;
 	border-style: solid;
 	padding: 25px;
-	border-width: 1px;
+	border-width: 0.1em;
 	border-radius: 5px;
 }
 
@@ -44,6 +44,17 @@
 
 .project-title-font {
 	font-family: 'Patua One', cursive;
+}
+
+.description-animation.ng-enter {
+	-webkit-transition: 1.5s linear all;
+  	transition: 0.75s linear all;
+
+  	opacity: 0;
+}
+
+.description-animation.ng-enter.ng-enter-active {
+	opacity: 1;
 }
 
 .tab-border-active {
