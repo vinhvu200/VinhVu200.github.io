@@ -14,58 +14,21 @@
 		</div>
 	</div>
 	<div class="col-10">
-
-
-
-		<h4 class="project-title-font" ng-show="projects.currentTab === 0">MAZE AI</h4>
-		<div class="description-animation" ng-if="projects.currentTab === 0">
-			<p class="project-desc-font">I have been learning about Reinforcement Learning lately so I decided to put some of that knowlege to practice. Here, I created a tool to visually represent what is happening during the learning process of Q(λ). Users can observe how certain parameter affects the learning by watching the bot learn the maze or manually move the bot itself to see the results. Check out my Github for a more detailed explanation and videos of the bot learning the maze.</p>
-			<img src="images/github_icon.svg" width="25"/>
-			<a class="text-info" href="https://github.com/vinhvu200/MazeAI">Details here</a>
-		</div>
-		<div ng-show="projects.currentTab === 0">
-			<br />
+		<div ng-repeat="project in projects.projects" ng-show="projects.checkTab($index)">
+			<h4 class="project-title-font">{{project.title}}</h4>
+			<div class="description-animation" ng-if="projects.checkTab($index)">
+				<p>{{project.description}}</p>
+				<img src="images/github_icon.svg" width="25"/>
+				<a class="text-info" href="{{project.githubUrl}}">Details here</a>
+				<br /><br />
+			</div>
 			<div class="horizontal-scroll custom-background-scroll">
-				<img src="images/mazeAI_1.png" class="custom-image margin-right-maze" width="800">
-				<img src="images/mazeAI_2.png" class="custom-image margin-right-maze" width="800">
-				<img src="images/mazeAI_3.png" class="custom-image" width="800">
+				<img ng-repeat="image in project.images" src="{{image}}" width="{{project.imageWidth}}"
+				ng-class="{'margin-right-landscape' : project.imagePortrait === false && $index !== (project.images.length - 1),
+						   'margin-right-portrait' : project.imagePortrait === true && $index !== (project.images.length - 1),
+						   'custom-image' : project.imageBorder === true}">
 			</div>
 		</div>
-
-
-		<h4 class="project-title-font" ng-show="projects.currentTab === 1">Bill Split</h4>
-		<p class="project-desc-font description-animation" ng-if="projects.currentTab === 1">I designed an iOS mobile application to identify and split items on a receipt by product/price. Using tesseractOCR, your phone would be able to recognize texts on a receipt and parse it out line by line. After adding, deleting, and editing the appropriate lines, the user can assign individuals to their various purchase (along with tip and tax) so the application can partition the bill fairly. In retrospect, there is still lots of manual inputs to do but at least it is neatly formatted. Check out my Github for more details!</p>
-		<div ng-show="projects.currentTab === 1">
-			<img src="images/github_icon.svg" width="25"/>
-			<a class="text-info" href="https://github.com/vinhvu200/BillSplit">Details here</a>
-			<br />
-			<br />
-			<div class="horizontal-scroll custom-background-scroll">
-				<img src="images/billSplit_1.png" class="margin-right-bill" width="250">
-				<img src="images/billSplit_2.png" class="margin-right-bill" width="250">
-				<img src="images/billSplit_3.png" class="margin-right-bill" width="250">
-				<img src="images/billSplit_4.png" class="margin-right-bill" width="250">
-				<img src="images/billSplit_5.png" class="" width="250">
-			</div>
-		</div>
-
-
-		<h4 class="project-title-font" ng-show="projects.currentTab === 2">TurnKey</h4>
-		<p class="project-desc-font description-animation" ng-if="projects.currentTab === 2">For my Senior Experience Project, my team was tasked with the creation of prototypical android mobile application for TurnKey Strategic Relations. The team was comprised of both business and computer science students. This application provides tracking mechanisms to monitor the progress of goals set for the company. Competency scores are calculated from these continuous feedback in order to see how employees are doing at any point in time.</p>
-		<div ng-show="projects.currentTab === 2">
-			<img src="images/github_icon.svg" width="25"/>
-			<a class="text-info" href="https://github.com/vinhvu200/BillSplit">Details here</a>
-			<br />
-			<br />
-			<div class="horizontal-scroll custom-background-scroll">
-				<img src="images/turnkey_1.png" class="margin-right-turnkey" width="255">
-				<img src="images/turnkey_2.png" class="margin-right-turnkey" width="255">
-				<img src="images/turnkey_3.png" class="margin-right-turnkey" width="250">
-				<img src="images/turnkey_4.png" class="margin-right-turnkey" width="255">
-				<img src="images/turnkey_5.png" class="" width="255">
-			</div>
-		</div>
-
 	</div>
 </div>
 <br />

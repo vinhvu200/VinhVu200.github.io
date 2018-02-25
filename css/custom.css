@@ -26,16 +26,12 @@
 	border-radius: 5px;
 }
 
-.margin-right-maze {
-	margin-right: 15px;
+.margin-right-landscape {
+	margin-right: 1em;
 }
 
-.margin-right-bill {
-	margin-right: 60px;
-}
-
-.margin-right-turnkey {
-	margin-right: 60px;
+.margin-right-portrait {
+	margin-right: 3em;
 }
 
 .project-desc-font {
