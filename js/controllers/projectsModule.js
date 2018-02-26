@@ -5,7 +5,7 @@ angular.module('projectsModule', [])
 	// TurnKey
 	turnkey_images = ['/images/turnkey_1.png', '/images/turnkey_2.png', '/images/turnkey_3.png', '/images/turnkey_4.png', '/images/turnkey_5.png'];
 	var turnkey = new Project('TurnKey');
-	turnkey.setDescription('I have been learning about Reinforcement Learning lately so I decided to put some of that knowlege to practice. Here, I created a tool to visually represent what is happening during the learning process of Q(λ). Users can observe how certain parameter affects the learning by watching the bot learn the maze or manually move the bot itself to see the results. Check out my Github for a more detailed explanation and videos of the bot learning the maze.');
+	turnkey.setDescription('For my Senior Experience Project, my team was tasked with the creation of prototypical android mobile application for TurnKey Strategic Relations. The team was comprised of both business and computer science students. This application provides tracking mechanisms to monitor the progress of goals set for the company. Competency scores are calculated from these continuous feedback in order to see how employees are doing at any point in time.');
 	turnkey.setGithubUrl('https://github.com/vinhvu200/Turnkey');
 	turnkey.addImages(turnkey_images);
 	turnkey.setImageWidth(250);
@@ -30,9 +30,7 @@ angular.module('projectsModule', [])
 
 	// Service to be used
 	var projectService = {};
-	projectService.projects = [mazeAI, billSplit, turnkey];
-
-	projectService.testing = "Testing";
+	projectService.projects = [turnkey, billSplit, mazeAI];
 
 	return projectService;
 })

@@ -22,11 +22,7 @@ class Project {
 	}
 
 	addImages(images){
-
-		var i;
-		for (i=0; i<images.length; i++){
-			this.images.push(images[i]);
-		}
+		this.images = images;
 	}
 
 	githubUrl(){
