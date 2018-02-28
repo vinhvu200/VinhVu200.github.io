@@ -1,3 +1,21 @@
+.parallax-content {
+	padding: 0 10px;
+	margin: auto;
+	text-align: center;
+	display: table;
+
+	border-width: 0.1em;
+	border-color: white;
+	border-style: none none solid none;
+}
+
+.parallax-content h1 {
+	font-size: 5em;
+	color: white;
+	display: table-cell;
+    vertical-align: middle;
+}
+
 .custom-background-body {
 	background-size: 2000px;
 	background-image: url('/images/pattern1.jpg');
@@ -51,6 +69,45 @@
 
 .description-animation.ng-enter.ng-enter-active {
 	opacity: 1;
+}
+
+.parallax {
+    background-image: url('/images/landscape_1.jpg');
+
+    min-height: 35em;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 12em 0;
+}
+
+.parallax-two {
+    background-image: url('/images/landscape_1.jpg');
+
+    min-height: 15em;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 12em 0;
+}
+
+.parallax-three {
+    background-image: url('/images/landscape_3.jpg');
+
+    min-height: 15em;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 12em 0;
 }
 
 .tab-border-active {

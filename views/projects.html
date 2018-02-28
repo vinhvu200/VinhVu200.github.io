@@ -1,32 +1,37 @@
-<br />
-<p>Check out some of the projects I've worked on. Excuse my uncreative names for them.</p>
-<br />
+<div class="custom-background-body">
+	<div class="container">
+		<br />
+		<p>Check out some of the projects I've worked on. Excuse my uncreative names for them.</p>
+		<br />
 
-<div class="row">
-	<div class="col-sm-12 col-md-2">
-		<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-			<a ng-repeat="project in projects.projects" class="nav-link text-info text-center" href="" ng-click="projects.setTab($index)"
-			ng-class="{ 'tab-border-active' : projects.checkTab($index)}">{{project.title}}</a>
-		</div>
-	</div>
-	<div class="col-sm-12 col-md-10">
-		<div ng-repeat="project in projects.projects" ng-show="projects.checkTab($index)">
-			<h4 class="project-title-font">{{project.title}}</h4>
-			<div class="description-animation" ng-if="projects.checkTab($index)">
-				<p>{{project.description}}</p>
-				<img src="images/github_icon.svg" width="25"/>
-				<a class="text-info" href="{{project.githubUrl}}">Details here</a>
+		<div class="row">
+			<div class="col-sm-12 col-md-2">
+				<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+					<a ng-repeat="project in projects.projects" class="nav-link text-info text-center" href="" ng-click="projects.setTab($index)"
+					ng-class="{ 'tab-border-active' : projects.checkTab($index)}">{{project.title}}</a>
+				</div>
 				<br /><br />
 			</div>
-			<div class="horizontal-scroll custom-background-scroll">
-				<img ng-repeat="image in project.images" src="{{image}}" width="{{project.imageWidth}}"
-				ng-class="{'margin-right-landscape' : project.imagePortrait === false && $index !== (project.images.length - 1),
-						   'margin-right-portrait' : project.imagePortrait === true && $index !== (project.images.length - 1),
-						   'image-border' : project.imageBorder === true}">
+			<div class="col-sm-12 col-md-10">
+				<div ng-repeat="project in projects.projects" ng-show="projects.checkTab($index)">
+					<h4 class="project-title-font">{{project.title}}</h4>
+					<div class="description-animation" ng-if="projects.checkTab($index)">
+						<p>{{project.description}}</p>
+						<img src="images/github_icon.svg" width="25"/>
+						<a class="text-info" href="{{project.githubUrl}}">Details here</a>
+						<br /><br />
+					</div>
+					<div class="horizontal-scroll custom-background-scroll">
+						<img ng-repeat="image in project.images" src="{{image}}" width="{{project.imageWidth}}"
+						ng-class="{'margin-right-landscape' : project.imagePortrait === false && $index !== (project.images.length - 1),
+								   'margin-right-portrait' : project.imagePortrait === true && $index !== (project.images.length - 1),
+								   'image-border' : project.imageBorder === true}">
+					</div>
+				</div>
 			</div>
 		</div>
+		<br />
+		<br />
+		<br />
 	</div>
 </div>
-<br />
-<br />
-<br />
