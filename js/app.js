@@ -1,4 +1,4 @@
-var app = angular.module('mainModule', ['ngRoute', 'ngAnimate', 'projectsModule']);
+var app = angular.module('mainModule', ['ngRoute', 'ngAnimate', 'projectsModule', 'contactModule']);
 
 app.config(function($routeProvider){
 
@@ -15,7 +15,9 @@ app.config(function($routeProvider){
 	})
 
 	.when('/contact', {
-		templateUrl: 'views/contact.html'
+		templateUrl: 'views/contact.html',
+		controller: 'ContactController',
+		controllerAs: 'contact'
 	});
 	
 });

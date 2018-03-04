@@ -1,2 +1,12 @@
-<p>Only page created at the moment is the project page</p>
-<p>Contact Page</p>
+<div class="table-wrapper">
+	<div class="table-container">
+		<table ng-repeat="contact in contact.contacts" class="contact">
+			<tr class="contact-logo">
+				<th><img src="{{contact.logo}}" width="100"></th>
+			</tr>
+			<tr class="contact-link" ng-click="contact.redirectUrl()">
+				<td>{{contact.title}}</td>
+			</tr>
+		</table>
+	</div>
+</div>

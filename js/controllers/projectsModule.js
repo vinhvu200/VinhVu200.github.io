@@ -35,7 +35,7 @@ angular.module('projectsModule', [])
 	return projectService;
 })
 
-.controller('ProjectsController', function($scope, ProjectService){
+.controller('ProjectsController', function(ProjectService){
 
 	this.projects = ProjectService.projects;
 	this.currentTab = 0;
