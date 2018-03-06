@@ -1,12 +1,18 @@
+<br /><br />
+<h2 class="text-center">Contact</h2>
 <div class="table-wrapper">
 	<div class="table-container">
-		<table ng-repeat="contact in contact.contacts" class="contact">
+		<table ng-repeat="contact in contact.contacts" class="contact" ng-click="contact.redirectUrl()">
 			<tr class="contact-logo">
 				<th><img src="{{contact.logo}}" width="100"></th>
 			</tr>
-			<tr class="contact-link" ng-click="contact.redirectUrl()">
+			<tr class="contact-link">
 				<td>{{contact.title}}</td>
 			</tr>
 		</table>
+		<br />
+		<img src="/images/mail_icon.png" width="40">
+		vinhvu200@gmail.com
 	</div>
 </div>
+<br /><br />

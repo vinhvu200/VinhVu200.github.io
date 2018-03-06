@@ -12,27 +12,14 @@
 
 	</head>
 
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand text-white" href="#">Vinh Vu</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
+<body ng-controller="MainController as main">
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link text-white" href="#/">Introduction</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link text-white" href="#!projects">Projects</a>
-				</li>
-			</ul>
-
-			<a class="nav-link text-white" href="#!contact">Contact</a>
-
-		</div>
-	</nav>
+	<ul class="custom-navbar" ng-class="{ 'custom-background-body' : main.currentTab === 'Projects' }">
+		<li ng-repeat="tab in main.tabs" ng-class="{ 'custom-active' : tab.active === true }" 
+		ng-click="main.setTab($index)">
+			<a href="{{tab.url}}">{{tab.name}}</a>
+		</li>
+	</ul>
 
 	<div>
 		<div ng-view>
@@ -51,5 +38,6 @@
 	<script src="js/controllers/contactModule.js"></script>
 	<script src="models/project.js"></script>
 	<script src="models/contact.js"></script>
+	<script src="models/tab.js"></script>
 </body>
 </html>
