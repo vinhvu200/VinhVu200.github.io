@@ -12,18 +12,9 @@
 
 	</head>
 
-<body ng-controller="MainController as main">
-
-	<ul class="custom-navbar" ng-class="{ 'custom-background-body' : main.currentTab === 'Projects' }">
-		<li ng-repeat="tab in main.tabs" ng-class="{ 'custom-active' : tab.active === true }" 
-		ng-click="main.setTab($index)">
-			<a href="{{tab.url}}">{{tab.name}}</a>
-		</li>
-	</ul>
-
+<body>
 	<div>
-		<div ng-view>
-		</div>
+		<div ng-view></div>
 	</div>
 
 	<!-- Scripts to include -->
@@ -34,8 +25,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 	<script src="js/app.js"></script>
-	<script src="js/controllers/projectsModule.js"></script>
 	<script src="js/controllers/contactModule.js"></script>
+	<script src="js/controllers/introductionModule.js"></script>
+	<script src="js/controllers/projectsModule.js"></script>
 	<script src="models/project.js"></script>
 	<script src="models/contact.js"></script>
 	<script src="models/tab.js"></script>

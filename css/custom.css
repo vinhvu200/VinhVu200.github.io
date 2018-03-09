@@ -43,6 +43,34 @@
     background-repeat: repeat;
 }
 
+.custom-navbar {
+	list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.custom-navbar li:first-child {
+	margin-right: 150px;
+}
+
+.custom-navbar li{
+	float: right;
+}
+
+.custom-navbar li a {
+	display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+.custom-active {
+	border: 2px solid black;
+}
+
 .description-animation.ng-enter {
 	-webkit-transition: 1.5s linear all;
   	transition: 0.75s linear all;
@@ -102,7 +130,7 @@
 .parallax-two {
     background-image: url('/images/landscape_3.jpg');
 
-    min-height: 20em;
+    min-height: 22em;
 
     background-attachment: fixed;
     background-position: center;
@@ -160,37 +188,6 @@
 	text-align: center;
 }
 
-
-
-
-.custom-navbar {
-	list-style-type: none;
-    margin: 5px 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-}
-
-.custom-navbar li:first-child {
-	margin-right: 100px;
-}
-
-.custom-navbar li{
-	float: right;
-}
-
-.custom-navbar li a {
-	display: block;
-    color: black;
-    text-align: center;
-    padding: 5px 16px;
-    text-decoration: none;
-}
-
-.custom-active {
-	border: 2px solid black;
-}
-
-.bg-gray {
-	background-color: lightgray;
+.hidden {
+	visibility: hidden; 
 }
