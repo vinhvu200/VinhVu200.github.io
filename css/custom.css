@@ -82,6 +82,10 @@
 	opacity: 1;
 }
 
+.hidden {
+	visibility: hidden; 
+}
+
 .horizontal-scroll {
 	overflow: auto;
 	white-space: nowrap;
@@ -106,11 +110,11 @@
 	margin-right: 3em;
 }
 
-.project-desc-font {
+.font-open-sans {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.project-title-font {
+.font-patua-one {
 	font-family: 'Patua One', cursive;
 }
 
@@ -186,8 +190,4 @@
 .table-wrapper {
 	margin-top: 2em;
 	text-align: center;
-}
-
-.hidden {
-	visibility: hidden; 
 }

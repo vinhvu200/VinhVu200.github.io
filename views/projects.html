@@ -1,7 +1,7 @@
 <ul class="custom-navbar">
 	<li><a class="hidden" href="#/">Contact</a></li>
 	<li><a href="#!projects" class="custom-active">Project</a></li>
-	<li><a href="#/">Introduction</a></li>
+	<li><a href="#/">About Me</a></li>
 </ul>
 
 <div class="custom-background-body">
@@ -20,8 +20,8 @@
 			</div>
 			<div class="col-sm-12 col-md-10">
 				<div ng-repeat="project in projects.projects" ng-show="projects.checkTab($index)">
-					<h4 class="project-title-font">{{project.title}}</h4>
-					<div class="description-animation" ng-if="projects.checkTab($index)">
+					<h4 class="font-patua-one">{{project.title}}</h4>
+					<div class="description-animation font-open-sans" ng-if="projects.checkTab($index)">
 						<p>{{project.description}}</p>
 						<img src="images/github_icon.svg" width="25"/>
 						<a class="text-info" href="{{project.githubUrl}}">Details here</a>

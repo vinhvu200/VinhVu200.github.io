@@ -1,4 +1,4 @@
-var app = angular.module('mainModule', ['ngRoute', 'ngAnimate', 'projectsModule', 'contactModule', 'introductionModule']);
+var app = angular.module('mainModule', ['ngRoute', 'ngAnimate', 'projectsModule', 'contactModule', 'aboutMeModule']);
 
 app.directive('contact', function(){
 
@@ -15,9 +15,9 @@ app.config(function($routeProvider){
 	$routeProvider
 
 	.when('/', {
-		templateUrl: 'views/introduction.html',
-		controller: 'IntroductionController',
-		controllerAs: 'intro'
+		templateUrl: 'views/aboutMe.html',
+		controller: 'AboutMeController',
+		controllerAs: 'about'
 	})
 
 	.when('/projects', {
